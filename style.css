@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    to right bottom,
+    rgb(247, 248, 175),
+    rgb(253, 247, 156)
+  );
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: green;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  color: aliceblue;
+  font-size: 15px;
+  cursor: pointer;
+  /* text-transform: uppercase; */
+}
+button:hover {
+  transform: scale(1.04);
+}
+.birds {
+  background-color: greenyellow;
+  color: brown;
+}
+.flowers {
+  background-color: purple;
+}
+img {
+  width: 300px;
+  border-radius: 7px;
+  box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-in-out;
+}
+img:hover {
+  transform: scale(1.04);
+}
+#flowersOrBirds {
+  width: 100%;
+}
