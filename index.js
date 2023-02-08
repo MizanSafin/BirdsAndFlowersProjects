@@ -34,10 +34,13 @@ buttonsEl.forEach((btn) => {
       (item) => item.name == e.target.textContent
     );
 
-    flowersOrBirdsEl.innerHTML = newArr.map((item) => {
-      return `
+    flowersOrBirdsEl.innerHTML = newArr
+      .map((item) => {
+        return `
              <img src=${item.img} alt=${item.name} >
+             
         `;
-    });
+      })
+      .join("");
   });
 });

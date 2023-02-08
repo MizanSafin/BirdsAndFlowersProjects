@@ -8,12 +8,12 @@ body {
   min-height: 100vh;
   background: linear-gradient(
     to right bottom,
-    rgb(247, 248, 175),
-    rgb(253, 247, 156)
+    rgb(253, 233, 119),
+    rgb(247, 167, 130)
   );
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+
   align-items: center;
 }
 .buttons {
@@ -24,33 +24,44 @@ body {
 button {
   padding: 10px 20px;
   border: none;
-  background-color: green;
+  background-color: rgb(4, 175, 4);
   border-radius: 10px;
   transition: 0.3s ease-in-out;
   color: aliceblue;
-  font-size: 15px;
+  font-size: 12px;
   cursor: pointer;
-  /* text-transform: uppercase; */
+  font-weight: bold;
+  text-transform: uppercase;
 }
 button:hover {
   transform: scale(1.04);
 }
 .birds {
-  background-color: greenyellow;
-  color: brown;
+  background-color: rgb(107, 156, 33);
+  color: rgb(226, 222, 222);
 }
 .flowers {
-  background-color: purple;
+  background-color: rgb(240, 66, 240);
 }
 img {
-  width: 300px;
-  border-radius: 7px;
-  box-shadow: 1px 3px 0px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
   transition: 0.5s ease-in-out;
 }
 img:hover {
   transform: scale(1.04);
 }
+@media screen and (max-width: 768px) {
+  img {
+    width: 250px;
+  }
+}
 #flowersOrBirds {
   width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
